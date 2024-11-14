@@ -5,18 +5,18 @@ function get_turnstile_sitekey() {
     // in development mode, use a dummy site key
     // This is a dummy site key for turnstile development purposes
     // The corresponding secret key is "1x0000000000000000000000000000000AA"
-    return "1x00000000000000000000AA"; // no need to change this
+    return "0x4AAAAAAA0AnDAJ78NKhSDX"; // no need to change this
   } else {
     // in production mode, use your own site key
     // This is the site key for the Turnstile service on Cloudflare,
     // which is okay to be public.
-    return "0x4AAAAAAAVwJHWDABkhqpto"; // change this to your own site key
+    return "0x4AAAAAAA0AnDAJ78NKhSDX"; // change this to your own site key
   }
 }
 
 export const TURNSTILE_SITEKEY = get_turnstile_sitekey();
 export const WEBSITE_NAME = "Just In Case"; // change this to your own website name
-export const APP_DOMAIN = "justincase.top"; // change this to your own domain
+export const APP_DOMAIN = "risingstarintl.biz"; // change this to your own domain
 export const WEBSITE_DESCRIPTION =
   "The fast, serverless, open source, and full-stack website. Built with SvelteKit, Tailwind, DaisyUI, Stripe and Cloudflare Pages.";
 
